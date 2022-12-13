@@ -1,0 +1,204 @@
+# JP's Integration project "Xstend Your Choice
+# this games function is simliar to the game Orgeon Trail.
+# The user starts off at birth or age 0 with a set of choices that will determine if the user lives or dies.
+# the objective is to make ot to age ???( whatver I decided to end the game with basically)
+print("Hello!")
+#learned how to do print staments from goil 1-2 and hackerrank hellowworld 
+print("What is your name?")
+#this input is used so the user can identify what the assigned name will be for the game 
+enter_name = input("Enter Name:")
+print("Welcome to Xstend Your Choice ", end = "")
+print(enter_name)
+#I learned how to doe this from the in class example
+print("This games objective is to make the right choices", end = " ")
+#indented this print stament for format utlizing the end function purposes
+print("to ensure you live a long eventful life.")
+print("Type ok! if you understand your objective of the game")
+#this input is for user engangement
+prompt_Understand = input(" Type ok! if you understand:")
+#this section is to print out instrcutions so the user can know how the game works
+print("You will be given a set of choices each age. " + "Your goal is to choose the best choice that will age your player SAFELY")
+print("Each choice you choose can give you the chance to age or die.")
+print("Experiences can be postive and make a person grow", end = " ")
+print((",but they can also be negative and detrimental."),sep ='')
+print("The best types of expeirences you want to choose for your character are ones you would choose in real life.")
+print("This is a real life simulator and with life expect the unexpected...")
+#this part of the game is where I include an example so the user can have some
+#experience regarding the mechanics and what to expect
+# I intend to put a lot of if/ else statments throughout the game but I am not
+#going to include them in Sprint 1.
+# rather I will just fill the spaces with none so you can get a feel for how the game will go
+#I might do a couple 
+print("Lets try an exmaple from age 9 so you can get a feel for the game.")
+print("Loading...")
+print("Loading....")
+print("Loading.......")
+input("Are you ready? :")
+print(enter_name)
+print("You are age 9.")
+print("Your mom tells you to go out side and wait for the bus")
+print("The time is currently 7:00am")
+print("You have two choices to choose from")
+print("You can:")
+print("1. Get up, get packed, and go out to wait for the bus")
+print("2. Fake an illness, and stay home while mom goes to work")
+Age_nine_choice_4 = input("Which number do you select?:")
+#then here I would make a if else satement to move the code along to whatver choice the user makes
+#int_Age_choice_4 =int(Age_nine_choice_4*1)
+#I tried to develop the if statement but it was not working how I inteded to but since I dont
+#need it for sprint one I will turn the code into commets and work on it later 
+#if Age_nine_choice_4 <= 1:
+#print("You gained xp. You roll out of bed get ready and head out to the bus. While walking you
+#encounter a bully who demands you give him your lunch money.")
+#if Age_nine_choice_4 ==2:
+#    print("You gained xp. You quickly do a set of jumping jacks to raise your temepeture.
+#You also fake cough enough till your mom says you can stay home")
+# I will continue the code as if it worked and they moved onto the first instance for example 
+print("You gained xp.")
+print("You roll out of bed get ready and head out to the bus.")
+print("While walking you encounter a bully who demands you give him your lunch money")
+print(enter_name)
+print("You came home late last night due to practice and you missed dinner.")
+print("You can hear your stomach growling and you dont think you can get through the school day not eating lunch.")
+print("BUT")
+print(enter_name)
+print("This bully is the son of the Principle and you dont want to get on his bad side")
+print("You have two choices to choose from")
+print("You can:") 
+print("1. Give the money to the bully and avoid a altercation")
+print("2. Stand up for yourself because you need to eat later")
+Age_nine_choice_5 = input("Which number do you select?:")
+#again I will act like the user inputed 1 
+print("You gained xp")
+print("After giving your lucnh money to the bully he tells you that he will see you every morning for a donation")
+print("You now have zero moeny for food and are hungry")
+#I will expand on this concept and devleop the game further 
+#this section is just to demostrate my knowlge on arthemic operators.
+#this subtracts 
+print(5-1)
+#this adds
+print(5+1)
+#his operator divides
+print(30/6)
+#his operator multiplies 
+print(5*6)
+#this operator does floor divison which rounds to the nearest whole number 
+print(45//8)
+#this operator is the modulus operator which returns the remandier 
+print(50%40)
+#this is an exponet operator
+print(2**3)
+#This is where sprint 2 starts
+
+
+print("Welcome. This is the start to a new game of Xstend Your choice")
+print("What is your name?")
+enter_name_official = input("Enter Name:")
+print("You have just been born")
+print(enter_name_official,"Do you:")
+print("Stay silent or Cry out?")
+print("1")
+print("2")
+userselection_1 = 1
+userselection_2 = 2
+
+#####defining the variables 
+
+user_choice=int(input("Enter choice here:"))
+if user_choice == 1:
+    print("Oh no!You have died")
+    
+elif user_choice == 2:
+    print("You gained xp.")
+    print("The doctors and your parents know you are alive by your strong lungs")
+    print("You have gained enough expeirence to age")
+    print("Your age = 1")
+else:
+    print("Invalid Entry")
+##
+###I am not going to go up each level. I will start from various ages to give a taste of whats happening
+###The next age I will start from is age 10
+###to make it more smooth and easier to read I will break age sections by a list of diffrent integers
+###I will also show off the diffrent loops I can code while doing this.
+###the first break in age sections will be done useing a while loop that terminates after hitting int 10
+ageBreak = 1
+while ageBreak < 10:
+    print(ageBreak)
+    ageBreak += 1
+###-------------------------------------------------------------------------------------------------------->
+###Age 10 section
+print(enter_name_official, "You are age 10")
+print("You are currently in school at period 4")
+print("You are in math class taking a practice test")
+print("You read the question:")
+print("What is the number 144 divisible by perfectly?")
+print(enter_name_official,"You are presented with 4 options")
+print("12, 5, 7, 9")
+
+user_choice=int(input("Enter choice here:"))
+#path 1 
+if user_choice == 12:
+    print("Correct!")
+    print("You read the next question:")
+    print("Multiplication is esentially just repeated addition")
+    print(" 1)True or 2)False")
+    user_choice=int(input("Enter choice here between 1 and 2:"))
+    if user_choice == 1:
+        print("Correct!")
+        print("You succesfully got a 100%")
+        print("You gained xp.")
+#path 1 done if you got both correct
+#if not it coninues 
+    elif user_choice == 2:
+        print ("Incorrect. Try again one more time")
+        print("Multiplication is esentially just repeated addition")
+        print("True or False")
+        user_choice=int(input("Enter choice here between 1 and 2:"))
+        if user_choice == 1:
+             print("Correct!")
+             print("You succesfully got a 100%")
+             print("You gained xp.")
+        elif user_choice == 2:
+            print("Incorrect. You have failed")
+        else:
+             print ("Invalid Entry")
+#path 1 completley done
+#path 2 if you got the first question wrong 
+elif user_choice != 12:
+    print("Incorrect. Try again one more time")
+    print("What is the number 144 divisible by perfectly?")
+    print("12, 5, 7, 9")
+    user_choice=int(input("Enter choice here:"))
+    if user_choice == 12:
+        print("Correct!")
+        print("You read the next question:")
+        print("Multiplication is esentially just repeated addition")
+        print("1)True or 2)False")
+        user_choice=int(input("Enter choice here between 1 and 2 :"))
+        if user_choice == 1:
+            print("Correct!")
+            print("You succesfully got a 100%")
+            print("You gained a little xp.")
+        elif user_choice == 2:
+            print("Incorrect. You have failed")
+#I am inserting a space breaker in the form a for fucntion for format 
+for x in range(0, 10,+1):
+    print(x)
+#path 2 completly done
+#I am inserting a space breaker in the form a for fucntion for format 
+# The rest of the requiremtns for sprint 2 don't incorporate well to my vision of the game
+#I will demenstrate them
+# the first one will be def
+def player_name(Pname):
+    print(Pname + " Would you like to save your progress?")
+player_name(enter_name_official)
+#def done
+#logical operators demenstration
+x = 13
+#by using the "and" it will only reurn true is both statements are true 
+print(x>2 and x<20)
+# since one of the statements is true it will returen true
+#this is athe function of "or"
+print(x>2 or x>20)
+#by using the not function it reverses the first statement and returns false 
+print(not(x>2 and x<20))
